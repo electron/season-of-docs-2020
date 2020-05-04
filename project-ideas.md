@@ -11,7 +11,7 @@ The Electron maintainers are excited to be applying to the second edition of Goo
 
 ## What is Electron?
 
-[Electron](https://electronjs.org) is a JavaScript framework that empowers developers to create cross-platform desktop applications using HTML, CSS, and JavaScript. Over the years, it has grown to be a leader in desktop app development, with [over 80000 stars on GitHub](https://github.com/electron/electron) and a long list of companies that trust it to to build high-quality applications that users love, including [WhatsApp](https://www.whatsapp.com/), Microsoft Teams, Slack, and Visual Studio Code.
+[Electron](https://electronjs.org) is a JavaScript framework that empowers developers to create cross-platform desktop applications using HTML, CSS, and JavaScript. Over the years, it has grown to be a leader in desktop app development, with [over 80000 stars on GitHub](https://github.com/electron/electron) and a long list of companies that trust it to to build high-quality applications that users love, including [WhatsApp](https://www.whatsapp.com/), [Microsoft Teams](https://www.microsoft.com/en-ca/microsoft-365/microsoft-teams/group-chat-software), [Slack](https://slack.com/), and [Visual Studio Code](https://code.visualstudio.com/).
 
 ## Project Ideas
 
@@ -47,13 +47,13 @@ Ideally, we would have a more focused tutorial flow to streamline this learning 
 Experience with JavaScript in the past (Browser or Node.js).
 
 
-### 2. Contributor Documentation
+### 2. Contributor Documentation Expansion
 
 #### Description
 
 The barrier of entry for contributing to Electron internals is unfortunately higher than for most other JavaScript frameworks because of its complex build process and the codebase's reliance on C++ and Objective-C.
 
-Although we do have a section on [Contributing to Electron](https://www.electronjs.org/docs/development) in our documentation, the documentation is not nearly complete enough to onboard potential new contributors, and the documentation that *is* there focuses mostly on the mechanics of submitting a contribution rather than.
+Although we do have a section on [Contributing to Electron](https://www.electronjs.org/docs/development) in our documentation, the documentation is not nearly complete enough to onboard potential new contributors, and the documentation that *is* there focuses mostly on the mechanics of submitting a contribution rather than educating newcomers on how the code works.
 
 One good place to start would be to integrate the following [talk from Covalence Conference 2020](https://www.youtube.com/watch?v=1h8Fv4D-bTA), where core maintainer [@ckerr](https://github.com/ckerr) gave a great intro to contributing, into a concise doc. Another would be to do the same for other learning materials such as the [electron/onboarding-guide](https://github.com/electron/onboarding-guide) repository, but haven't integrated into our website.
 
