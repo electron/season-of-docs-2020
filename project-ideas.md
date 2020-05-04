@@ -1,75 +1,75 @@
-# Project Ideas
 
-> 👩‍🎨 Electron is maintained by a diverse group of passionate individuals, most of whom are
-employed by companies building apps with Electron. Electron isn't a product, it's a joint 
-project built by organizations who want to build excellent desktop apps that delight users. 
-> The Electron maintainers recognize the art of creating excellent documentation and realize that we,
-as a project, are very far away from documentation we admire (like Rust's or React's documentation). 
-The project list below outlines a few ideas we have for Season of Docs, but a technical writer 
-could easily see Electron's documentation as a blank canvas on which they can execute their own
-vision.
 
-### Create a Documentation Overview
 
-Electron's documentation is currently written in markdown files, which are checked into the main
-`electron/electron` repository. Once there, the markdown files get compiled down to HTML to be 
-displayed on https://electronjs.org. 
 
-When a user visits https://electronjs.org/docs, they are greeted by an alphabetical list of all
-markdown files in the repository. Figuring out which ones to read first, where to find more
-information, or how to begin learning Electron is entirely left to the user.
+# Electron: Google Season of Docs 2020
 
-The most powerful project any technical writer could take on is to guide a user through their
-first experience with Electron.
+*[Website](https://electronjs.org) | [GitHub](https://github.com/electron/electron) | [Season of Docs](https://developers.google.com/season-of-docs)*
 
-### Surface Versioned Documentation
+The Electron maintainers are excited to be applying to the second edition of Google's [Season of Docs](https://developers.google.com/season-of-docs) program! Season of Docs is an initiative that pairs technical writers with open source organizations to improve their project documentation.
 
-Our cumentation is tied directly to versions of Electron, but only published on our homepage
-for the latest stable version of Electron. If you are not using the latest stable version of
-Electron, you'll have to read the raw markdown files on GitHub. We are impressed by [Ember's solution][ember]
-where a developer can simply select their desired version in a drop-down menu and see documentation
-for that specific version of Ember.
 
-It'd be _delightful_ if Electron had a similar setup.
+## What is Electron?
 
-### Identify and Fill Gaps in the Guides
+[Electron](https://electronjs.org) is a JavaScript framework that empowers developers to create cross-platform desktop applications using HTML, CSS, and JavaScript. Over the years, it has grown to be a leader in desktop app development, with [over 80000 stars on GitHub](https://github.com/electron/electron) and a long list of companies that trust it to to build high-quality applications that users love, including [WhatsApp](https://www.whatsapp.com/), [Microsoft Teams](https://www.microsoft.com/en-ca/microsoft-365/microsoft-teams/group-chat-software), [Slack](https://slack.com/), and [Visual Studio Code](https://code.visualstudio.com/).
 
-In addition to pure API documentation, Electron maintains a 
-[number of guides in markdown format][guides]. Felix Rieseberg did a first pass in 2018 to identify
-gaps and combine those guides into one [narrative][guides-overview], but gaps certainly exist. Which
-points did we gloss over that need more detail? Where should we add more examples? Are there portions
-we could cut out?
+## Project Ideas
 
-### Define a Strategy for How Documentation & Electron Fiddle Work Together
+Although [our documentation pages](https://www.electronjs.org/docs) get hundreds of thousands of unique pageviews every month, we are very far away from having the structure and clarity of documentation we admire. The project list below outlines a couple ideas we have for Season of Docs 2020, but these are only a few examples of the many improvements we could make. A technical writer involved in any of these project ideas will work alongside Electron's [Ecosystem Working Group](https://github.com/electron/governance/tree/master/wg-ecosystem) to refine these initial idea drafts and implement them in the electronjs.org documentation.
 
-The Electron maintainers also maintain a "code playground app" called [Electron Fiddle][fiddle],
-which is aimed at newcomers and experienced developers alike. It's an easy way to quickly try
-out APIs, identify bugs, and play with Electron's capabilities. 
+### 1. Electron Tutorial Flow
 
-Given Fiddle's place in a developers journey towards becoming an experienced Electron developer,
-it should probably be incorporated into the documentation. How do we serve our developers best?
-Should all examples be runnable inside Electron Fiddle? 
+#### Description
 
-### Organize API Documentation and Guides
+Currently, the main way to access Electron's documentation is through the "Docs" page in the navbar at electronjs.org, which brings you to the [Docs](https://www.electronjs.org/docs) page.
 
-Electron's documentation currently serves three purposes at once:
- - It is used by developers to see and learn about available APIs
- - It is used to automatically generate TypeScript definition files
- - It contains mini-examples that may or may not need additional code before they can be tried out
- 
-We have heard from developers that this combination creates a compromise - our documentation files
-currently serve all those needs a little bit, but aren't quite perfect at any of them. Someone 
-wanting to learn about an API isn't best served by a pure implementation reference while someone 
-looking for the exact specification first has to cut through the basic tutorial aspects. A 
-reorganization would make developer's lifes a lot easier.
+There is some degree of organization there already: new developers can easily access the "Setting up the Development Environment" and "Creating your First App" sections to get started. However, it is unclear where new developers should go from there, as the breadth of topics that Electron covers can seem overwhelming to developers who are new to the framework.
 
-### Create an Onboarding Guide for Potential Contributors
+Examples of things that could be structured better are:
+* Introducing the [application architecture](https://www.electronjs.org/docs/tutorial/application-architecture)
+* Guides for specific Electron features
+* Deploying an application to production
 
-While our documentation around getting started with building apps with Electron isn't in a good spot,
-documentation around how to work on Electron itself is even more sparse. Building Electron on your
-own machine is entirely possible and shouldn't require that one knows one of the Electron maintainers.
+#### Expected Outcomes
 
-[guides]: https://github.com/electron/electron/tree/master/docs/tutorial
-[guides-overview]: https://github.com/electron/electron/tree/master/docs#guides-and-tutorials
-[fiddle]: https://github.com/electron/fiddle
-[ember]: https://guides.emberjs.com/release/
+Ideally, we would have a more focused tutorial flow to streamline this learning process. This would involve updating the existing tutorial content and providing a better information architecture that can teach newcomers with a minimal amount of friction.
+
+#### Project Deliverables
+
+* Rewrite and expansion of the [First App](https://www.electronjs.org/docs/tutorial/first-app) tutorial that attempts to include more Electron fundamentals in its explanation.
+* Inclusion of [electron/electron-api-demos](https://github.com/electron/electron-api-demos) repository content in documentation.
+* Reorganization of our existing guides to complement the new tutorial.
+* Restructuring of [Docs directory](https://www.electronjs.org/docs) to provide new users with a visual hierarchy of important documentation.
+* *Bonus*: Integration of [Electron Fiddle](https://electronjs.org/fiddle) examples into our docs. We already have the architecture set up to launch Electron Fiddle directly from our website (see [electron/electronjs.org#2848](https://github.com/electron/electronjs.org/pull/2848)), but we have not yet leveraged this powerful capability.
+
+#### Preferred skills
+
+Experience with JavaScript in the past (Browser or Node.js).
+
+
+### 2. Contributor Documentation Expansion
+
+#### Description
+
+The barrier of entry for contributing to Electron internals is unfortunately higher than for most other JavaScript frameworks because of its complex build process and the codebase's reliance on C++ and Objective-C.
+
+Although we do have a section on [Contributing to Electron](https://www.electronjs.org/docs/development) in our documentation, the documentation is not nearly complete enough to onboard potential new contributors, and the documentation that *is* there focuses mostly on the mechanics of submitting a contribution rather than educating newcomers on how the code works.
+
+One good place to start would be to integrate the following [talk from Covalence Conference 2020](https://www.youtube.com/watch?v=1h8Fv4D-bTA), where core maintainer [@ckerr](https://github.com/ckerr) gave a great intro to contributing, into a concise doc. Another would be to do the same for other learning materials such as the [electron/onboarding-guide](https://github.com/electron/onboarding-guide) repository, but haven't integrated into our website.
+
+Examples of things that could be documented better are:
+* Updated tooling guides (e.g [electron/build-tools](https://github.com/electron/build-tools)).
+* Reasoning about the C++ codebase (see [electron/onboarding-guide](https://github.com/electron/onboarding-guide)).
+
+#### Expected Outcomes
+
+Ideally, this revamped Contributor onboarding experience would be enough for a developer familiar with Electron to understand enough about the framework's internals to make contributions to the codebase.
+
+#### Deliverables
+* Better information architecture for the existing [development docs](https://www.electronjs.org/docs/development).
+* A new onboarding tutorial that explains a high-level overview on how to navigate the codebase.
+* An updated [Build Instructions](https://www.electronjs.org/docs/development/build-instructions-gn) guide that involves newer tooling used by Electron maintainers, such as [electron/build-tools](https://github.com/electron/build-tools).
+
+#### Preferred skills
+
+Experience with Node.js and/or C++ in the past.
