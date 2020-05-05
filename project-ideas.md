@@ -8,6 +8,8 @@
 
 The Electron maintainers are excited to be applying to the second edition of Google's [Season of Docs](https://developers.google.com/season-of-docs) program! Season of Docs is an initiative that pairs technical writers with open source organizations to improve their project documentation.
 
+*If you have any questions after reading this document, please don't hesitate to contact us at season-of-docs@electronjs.org!*
+
 
 ## What is Electron?
 
